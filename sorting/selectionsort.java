@@ -27,7 +27,7 @@ public class selectionsort {
                 max=i;   //that i ele will be max
             }
         }
-        return max;    //cause return_type used in method is int
+        return max;    
     }
 
     static void swap(int arr[], int a, int b)  //a=max & b=last while calling this method
