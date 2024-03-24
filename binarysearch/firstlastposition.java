@@ -1,5 +1,5 @@
 package binarysearch;
-
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 import java.util.Arrays;
 
 public class firstlastposition {
@@ -36,11 +36,12 @@ public class firstlastposition {
                 start = mid + 1;
             } else {
                 // potential ans found
+                //can have same ele before or after the potential ans also
                 ans = mid;
                 if (findStartIndex) {
-                    end = mid - 1;
+                    end = mid - 1;         //to check if same ele exists before it
                 } else {
-                    start = mid + 1;
+                    start = mid + 1;       //after it
                 }
             }
         }
