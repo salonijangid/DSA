@@ -13,7 +13,7 @@ public class firstlastposition {
     static int[] searchrange(int[] nums, int target) {
 
         int[] ans = {-1, -1};
-        // check for first occurrence if target first
+        // checking first occurrence
         ans[0] = search(nums, target, true);
         if (ans[0] != -1) {
             ans[1] = search(nums, target, false);
@@ -21,7 +21,7 @@ public class firstlastposition {
         return ans;
     }
 
-    // this function just returns the index value of target
+    //returns the index of target
     static int search(int[] nums, int target, boolean findStartIndex) {
         int ans = -1;
         int start = 0;
