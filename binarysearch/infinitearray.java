@@ -15,7 +15,7 @@ public class infinitearray {
         while(data>arr[end]){
             int newstart= end+1;
             end=end+(end-start+1)*2;     //new end = prev end + size of range prev searched * 2 ; size = end-start+1
-            start=newstart;
+            start=newstart;              //updating after end cause old start is used
         }
         return search(arr, data, start, end);
     }
