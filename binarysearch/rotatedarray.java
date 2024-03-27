@@ -1,10 +1,14 @@
 package binarysearch;
-
+/*
+ - searching an ele in sorted rotated array (distinct & duplicate)
+ - counting the no. of rotations
+ */
 public class rotatedarray {
     public static void main(String[] args) {
         int[] arr={4,5,6,7,0,1,2};
-        int target=0;
+        int target=1;
         System.out.println(search(arr,target));
+        System.out.println(countrotations(arr));
     }
 
     //1.find pivot= largest ele which has ascending arrays on both the sides
@@ -109,5 +113,11 @@ public class rotatedarray {
         else{
         return bsearch(arr, target, pivot + 1, arr.length - 1);
         }
+    }
+
+    //COUNT NO. OF ROTATIONS = index of pivot ele + 1
+    static int countrotations (int[] arr){
+        int pivot=findpivot(arr);
+        return pivot+1;
     }
 }
