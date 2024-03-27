@@ -2,7 +2,7 @@ package binarysearch;
 
 import java.util.Arrays;
 
-public class sortedmatrix {
+public class sortedrowcolmatrix {
     public static void main(String[] args) {
         int[][] matrix = {
             {1,2,3},
