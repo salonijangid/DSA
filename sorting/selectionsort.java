@@ -1,6 +1,6 @@
 package sorting;
 import java.util.Arrays;
-
+//find largest and swap w last pos ele //find smallest and swap w first pos ele
 public class selectionsort {
     public static void main(String[] args) {
         int arr[]={2,4,1,3,5};

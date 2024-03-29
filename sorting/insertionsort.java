@@ -11,7 +11,7 @@ public class insertionsort {
     static void insertion(int arr[])
     {
         //creating outer loop for every pass
-        for (int i = 0; i < arr.length-1; i++) // i<arr.length-1 or i<=arr.length-2 i.e if n=4, no. of passes = n-1 or length-1 
+        for (int i = 0; i < arr.length-1; i++) // i<arr.length-1 i.e if n=4, no. of passes = n-1 or length-1 
         {
             //inner loop for index of ele being compared with prev ele
             for (int j = i+1; j>0; j--) //if i=0 i.e pass1, j should be at index 1 to compare w index 0 so j=i+1
