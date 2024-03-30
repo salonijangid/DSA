@@ -1,6 +1,6 @@
 package sorting;
 import java.util.Arrays;
-
+//compares adjacent elements 
 public class bubblesort{
     public static void main(String[] args) {
         int arr[]={5,4,3,2,1};

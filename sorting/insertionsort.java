@@ -1,6 +1,6 @@
 package sorting;
 import java.util.Arrays;
-
+//1st ele is always sorted, compare next ele with prev ones and place accordingly
 public class insertionsort {
     public static void main(String[] args) {
         int arr[]={4,5,3,1,2};
