@@ -15,7 +15,7 @@ public class sortedrowcolmatrix {
 //by comparing and eliminating the row & col accordingly
     static int[] search(int[][] matrix, int data){
         int r= 0;  //start
-        int c= matrix.length-1;   //end
+        int c= matrix[0].length-1;   //end
 
         while(r< matrix[0].length && c>= 0){
             //3 cases
