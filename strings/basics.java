@@ -21,8 +21,8 @@ public class basics {
         System.out.println(Arrays.toString(new int[]{2,3,4}));  //creating ur own toString method
 
         
-        Integer n = new Integer(23);   //wrapper class
-        System.out.println(n.toString()); 
+        // Integer n = new Integer(23);   //wrapper class
+        // System.out.println(n.toString()); 
 
         //pretty printing
         float num = 124.345812f;
