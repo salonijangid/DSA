@@ -1,7 +1,8 @@
 package recursion;
 //function call will remain is stack until it is executed
 //recursion is a function that calls itself
-//types of recurrance relations - linear (fibo), divide & conquer (binary search)
+//types of recurrance relations - linear (eg-fibo), divide & conquer (eg-binary search)
+//space complexity = height of the recursive tree i.e path
 public class example {
     public static void main(String[] args) {
         //print numbers 1 to 5 using recursion
