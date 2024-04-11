@@ -1,0 +1,6 @@
+(a + b) % m = ((a % m) + (b % m)) % m
+(a - b) % m = ((a % m) - (b % m) + m) % m
+(a * b) % m = ((a % m) * (b % m)) % m
+(a / b) % m = ((a % m) * (b**-1 % m)) % m
+(a % m) % m = a % m
+m**x % m =0 for every x = pos integers
