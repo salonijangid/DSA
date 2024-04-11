@@ -1,4 +1,5 @@
 public class sieve {
+    //time complexity = O(n * log(long n))
     public static void main(String[] args) {
         //find prime numbers from 0 to n using sieve of eratosthenes
         //eliminating the multiples of a num i.e prime
