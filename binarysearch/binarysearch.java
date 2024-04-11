@@ -7,7 +7,7 @@ public class binarysearch {
         int ans=search(arr, data);
         System.out.println(ans);
     }
-
+//time complexity - O(log(n))
     static int search(int[] arr, int data){
         int start=0;
         int end=arr.length-1;
