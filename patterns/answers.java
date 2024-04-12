@@ -1,19 +1,22 @@
 public class answers {
     public static void main(String[] args) {
-        pattern1(5); 
-        pattern2(5);
-        pattern3(5);
-        pattern4(5);
-        pattern5(5);
-        pattern28(5);
-        pattern17(4);
-        pattern30(5);
-        pattern31(4);
-        pattern6(5);
-        pattern7(5);
-        pattern10(5);
-        pattern11(5);
-        pattern12(5);
+        //pattern1(5); 
+        //pattern2(5);
+        //pattern3(5);
+        //pattern4(5);
+        //pattern5(5);
+        //pattern28(5);
+        //pattern17(4);
+        //pattern30(5);
+        //pattern31(4);
+        //pattern6(5);
+        //pattern7(5);
+        //pattern10(5);
+        //pattern11(5);
+        //pattern12(5);
+        //pattern8(9);
+        //pattern9(9);
+        pattern13(9);
     }
 
     static void pattern1(int n) {   
@@ -201,5 +204,37 @@ public class answers {
             System.out.println();
         }
     }
+
+
+    static void pattern8(int n){
+        for(int row=1; row<= (n+1)/2; row++){
+            for(int space=0; space < n - row; space++){
+                System.out.print(" ");
+            }
+            for(int col=1; col<=2*row-1; col++){
+                    System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
+    static void pattern9(int n) {
+        for (int row = (n + 1) / 2; row >= 1; row--) {
+            for (int space = 0; space < (n+1)/2 - row; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= 2 * row - 1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+    
+    static void pattern13(int n){
+        
+    }
 }
+
           
