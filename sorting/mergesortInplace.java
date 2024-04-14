@@ -42,8 +42,6 @@ public class mergesortInplace {
             }
             k++;
         }
-
-    
         
         while (i < m) {
             merged[k] = arr[i];
