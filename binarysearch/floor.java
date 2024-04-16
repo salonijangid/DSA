@@ -1,13 +1,13 @@
 package binarysearch;
 //largest ele that is smaller than or equal to the data
-public class floorofnumber {
+public class floor {
     public static void main(String[] args) {
         int[] arr={12,23,45,68,79,80};
         int data=67;
-        int ans=floor(arr,data);
+        int ans=find(arr,data);
         System.out.println(ans);
     }
-    static int floor(int[] arr, int data){
+    static int find(int[] arr, int data){
         int start=0;
         int end=arr.length-1;
         while(start<=end){

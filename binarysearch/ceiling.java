@@ -1,6 +1,6 @@
 package binarysearch;
 //smallest ele that is larger than or equal to the data
-public class ceilingofnumber {
+public class ceiling {
     public static void main(String[] args) {
         int[] arr={12,23,45,68,79,80};
         int data=67;
