@@ -5,8 +5,8 @@ public class searchinrange {
         //search ele in given range of indices
         int[] arr={12,23,45,67,98,1,32};
         int data=12;
-        int start=1;   //starts iterating from arr[1]
-        int end=4;     //ends at arr[4]
+        int start=1;   
+        int end=4;     
         int ans=search(arr, data, start, end);
         System.out.println(ans);
 }
