@@ -1,4 +1,4 @@
-package recursion;
+package recursion.easy;
 //function call will remain is stack until it is executed
 //recursion is a function that calls itself
 //types of recurrance relations - linear (eg-fibo), divide & conquer (eg-binary search)

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.easy;
 
 public class productofdigits {
     public static void main(String[] args) {

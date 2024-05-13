@@ -1,4 +1,4 @@
-package recursion;
+package recursion.easy;
 
 public class countzero {
     public static void main(String[] args) {
