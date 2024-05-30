@@ -2,7 +2,7 @@ package recursion.easy;
 
 public class numbers {
     public static void main(String[] args) {
-        fun(5);
+        //fun(5);
         fun_rev(5);
     }
 
@@ -21,6 +21,6 @@ public class numbers {
             return;
         }
         fun_rev(n-1);
-        System.out.print(n);
+        System.out.print(n+" ");
     }
 }
