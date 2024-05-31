@@ -1,6 +1,6 @@
 package recursion.easy;
 
-public class reverse {
+public class reverse_num {
     public static void main(String[] args) {
         //rev1(1452);
         //System.out.println(sum);

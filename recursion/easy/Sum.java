@@ -1,5 +1,5 @@
 package recursion.easy;
-
+//TC & SC = O(n)
 public class Sum {
     public static void main(String[] args) {
         //sum of 1 to n
