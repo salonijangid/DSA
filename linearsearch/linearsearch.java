@@ -6,7 +6,7 @@ public class linearsearch {
         int ans=search(arr, data);
         System.out.println(ans);
     }
-
+    //TC - O(N) ; SC = O(1)
     static int search(int[] arr, int data){
         if(arr.length==0){
             return 1;
