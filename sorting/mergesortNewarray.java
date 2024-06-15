@@ -1,11 +1,5 @@
 package sorting;
-
 import java.util.Arrays;
-
-//split the given array into parts
-//sort them sep via recursion 
-//merge them
-//return the merged array i.e new
 public class mergesortNewarray {
     public static void main(String[] args){
         int[] arr={5,4,3,2,1};
@@ -15,23 +9,20 @@ public class mergesortNewarray {
 
     static int[] mergesort(int[] arr){
         if(arr.length == 1){
-            return arr;    //if only one ele, just return it
+            return arr;    
         }
         else{
-        //otherwise split the array into half
         int mid = arr.length / 2;
 
-        //create array for 1st & 2nd sub arrays by copying from given array
         int[] left = mergesort(Arrays.copyOfRange(arr, 0 , mid));
         int[] right = mergesort(Arrays.copyOfRange(arr, mid, arr.length));
 
-        //return a merged array of 1st & 2nd sorted arrays
         return merge(left, right);
         }
     }
 
     static int[] merge(int[] first, int[] second){
-        int[] merged = new int[first.length + second.length];   //length
+        int[] merged = new int[first.length + second.length];   
 
         int i = 0;   //to compare ele from 1st array
         int j = 0;   //to compare ele from 2nd array

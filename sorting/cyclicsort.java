@@ -1,8 +1,6 @@
 package sorting;
 
 import java.util.Arrays;
-//for 1 to N ele arrays
-//start from 1st index and place ele in (element - 1) position
 public class cyclicsort {
     public static void main(String[] args) {
         int[] arr ={5,3,4,2,1};
