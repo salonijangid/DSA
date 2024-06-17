@@ -1,8 +1,6 @@
-package binarysearch;
-//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 import java.util.Arrays;
 
-public class firstlastposition {
+public class first_last_occurence_of_ele {
     public static void main(String[] args) {
         int[] nums={1,2,3,4,4,4,5,6};
         int target=4;

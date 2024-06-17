@@ -1,4 +1,3 @@
-package binarysearch;
 //largest ele that is smaller than or equal to the data
 public class floor {
     public static void main(String[] args) {

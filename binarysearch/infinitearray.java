@@ -1,5 +1,3 @@
-package binarysearch;
-//https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 public class infinitearray {
     public static void main(String[] args) {
         int[] arr={12,23,24,34,35,46,67,89};

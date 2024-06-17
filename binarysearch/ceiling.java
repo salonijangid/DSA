@@ -1,4 +1,3 @@
-package binarysearch;
 //smallest ele that is larger than or equal to the data
 public class ceiling {
     public static void main(String[] args) {

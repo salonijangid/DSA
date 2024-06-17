@@ -1,4 +1,3 @@
-package binarysearch;
 //when you dont know if the sorted array is ascending or descending
 public class orderagnostic {
     public static void main(String[] args) {

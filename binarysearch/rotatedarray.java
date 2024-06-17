@@ -1,4 +1,3 @@
-package binarysearch;
 /*
  - searching an ele in sorted rotated array (distinct & duplicate)
  - counting the no. of rotations

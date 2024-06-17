@@ -1,5 +1,3 @@
-package binarysearch;
-
 import java.util.Arrays;
 
 public class sortedrowcolmatrix {

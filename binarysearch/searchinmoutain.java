@@ -1,4 +1,3 @@
-package binarysearch;
 //by implementating
 //https://leetcode.com/problems/find-in-mountain-array/
 public class searchinmoutain {
