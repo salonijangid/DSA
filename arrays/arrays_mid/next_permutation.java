@@ -8,7 +8,6 @@ public class next_permutation {
         System.out.println(Arrays.toString(next(a, n)));
     }
 
-    //TC -> O(N) ; SC -> O(1)
     static int[] next(int[] a, int n){
         int index = -1;
         for(int i=n-2; i>=0; i--){
