@@ -3,26 +3,27 @@ public class rotatedarray {
         int[] arr={4,5,6,7,0,1,2};
         int target=1;
         System.out.println(search(arr,target));
-        System.out.println(countrotations(arr));
+        System.out.println(count_rotations(arr));
     }
 
-    //1.find pivot= largest ele which has ascending arrays on both the sides
-    //FINDING PIVOT IN ROTATED ARRAY WITH DISTINCT VALUES I.E NO DUPLICATES
-    static int findpivot(int[] arr){
+    static int findpivotwithdistinct(int[] arr){
         int start=0;
         int end= arr.length-1;
         while(start<=end){
             int mid=(start+end)/2;
-            //4 cases to find the pivot
-            if(mid<end && arr[mid]>arr[mid+1]){         //mid ele cant be at last pos cause no mid+1 
+            //case 1
+            if(mid<end && arr[mid]>arr[mid+1]){         
                 return mid;
             }
-            if(mid>start && arr[mid]<arr[mid-1]){       //mid ele cant be at start pos cause no mid-1
+            //case 2
+            if(mid>start && arr[mid]<arr[mid-1]){       
                 return mid-1;
             }
+            //case 3
             if(arr[mid]<=arr[start]){
                 end=mid-1;
             }
+            //case 4
             else{
                 start=mid+1;
             }
@@ -30,7 +31,6 @@ public class rotatedarray {
         return -1;
     }
 
-    //FINDING PIVOT IN ROTATED ARRAY WITH DUPLICATE VALUES
     static int findpivotwithduplicates(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -89,7 +89,7 @@ public class rotatedarray {
 
     //3. find the req. target data
     static int search(int[] arr, int target) {
-        int pivot = findpivot(arr);
+        int pivot = findpivotwithdistinct(arr);
 
         // if you did not find a pivot, it means the array is not rotated
         if (pivot == -1) {
@@ -111,8 +111,8 @@ public class rotatedarray {
     }
 
     //COUNT NO. OF ROTATIONS = index of pivot ele + 1
-    static int countrotations (int[] arr){
-        int pivot=findpivot(arr);
+    static int count_rotations (int[] arr){
+        int pivot=findpivotwithdistinct(arr);
         return pivot+1;
     }
 }
