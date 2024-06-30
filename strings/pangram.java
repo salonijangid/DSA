@@ -1,7 +1,5 @@
 package strings;
-
 //pangram - all letters appear at least once
-
 public class pangram {
     public static void main(String[] args) {
         String sentence = "hello";

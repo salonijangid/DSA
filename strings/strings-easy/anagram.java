@@ -1,7 +1,4 @@
-package strings;
-
 import java.util.Arrays;
-
 //anagram -> letters that make up a word, phrase, or name are rearranged to create new ones
 public class anagram {
     public static void main(String[] args) {
