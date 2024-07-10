@@ -1,5 +1,3 @@
-package arrays_hard;
-
 import java.util.Arrays;
 
 public class three_sum {
