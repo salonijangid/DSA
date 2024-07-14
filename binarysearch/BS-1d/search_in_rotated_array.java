@@ -1,4 +1,4 @@
-public class rotatedarray {
+public class search_in_rotated_array {
     public static void main(String[] args) {
         int[] arr={4,5,6,7,0,1,2};
         int target=1;
@@ -36,41 +36,37 @@ public class rotatedarray {
         int end = arr.length - 1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            
+            //case 1
             if (mid < end && arr[mid] > arr[mid + 1]) {
                 return mid;
             }
+            //case 2
             if (mid > start && arr[mid] < arr[mid - 1]) {
                 return mid-1;
             }
-
-            // if elements at middle, start, end are equal then just skip the duplicates
-            if (arr[mid] == arr[start] && arr[mid] == arr[end]) {
-                
-                // NOTE: what if these elements at start and end were the pivot??
-                // so check if start is pivot
+            //case 3
+            if (arr[mid] == arr[start] && arr[mid] == arr[end]) {    
                 if (start < end && arr[start] > arr[start + 1]) {
                     return start;
                 }
-                start++;    //else skip
-
-                // and check whether end is pivot
+                start++;    
                 if (end > start && arr[end] < arr[end - 1]) {
                     return end - 1;
                 }
-                end--;     //else skip
+                end--;    
             }
-            // left side is sorted, so pivot should be in right
+            //case 4
             else if(arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
                 start = mid + 1;
-            } else {
+            } 
+            //case 5
+            else {
                 end = mid - 1;
             }
         }
         return -1;
     }
 
-    //2. applying binary search to both the ascending arrays to find target data
     static int bsearch(int[] arr, int data, int start, int end){
         while(start<=end){
             int mid=(start+end)/2;
@@ -87,21 +83,14 @@ public class rotatedarray {
         return -1;        
     }
 
-    //3. find the req. target data
     static int search(int[] arr, int target) {
         int pivot = findpivotwithdistinct(arr);
-
-        // if you did not find a pivot, it means the array is not rotated
         if (pivot == -1) {
-            // just do normal binary search
             return bsearch(arr, target, 0 , arr.length - 1);
         }
-
-        // if pivot is found, you have found 2 asc sorted arrays
         if (arr[pivot] == target) {
             return pivot;
         }
-
         if (target >= arr[0]) {
             return bsearch(arr, target, 0, pivot - 1);
         }
