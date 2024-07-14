@@ -3,7 +3,6 @@ public class search_in_rotated_array {
         int[] arr={4,5,6,7,0,1,2};
         int target=1;
         System.out.println(search(arr,target));
-        System.out.println(count_rotations(arr));
     }
 
     static int findpivotwithdistinct(int[] arr){
@@ -97,11 +96,5 @@ public class search_in_rotated_array {
         else{
         return bsearch(arr, target, pivot + 1, arr.length - 1);
         }
-    }
-
-    //COUNT NO. OF ROTATIONS = index of pivot ele + 1
-    static int count_rotations (int[] arr){
-        int pivot=findpivotwithdistinct(arr);
-        return pivot+1;
     }
 }
