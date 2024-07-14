@@ -1,3 +1,4 @@
+package extra;
 public class infinitearray {
     public static void main(String[] args) {
         int[] arr={12,23,24,34,35,46,67,89};
