@@ -1,5 +1,5 @@
 package arrays_easy;
-
+// total sum in orginal arr - sum of ele in given arr = missing ele
 public class missing_num_in_arr {
     public static void main(String[] args) {
         int[] arr={0,1,2,4};

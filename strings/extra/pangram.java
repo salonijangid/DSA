@@ -1,4 +1,4 @@
-package strings;
+package strings.extra;
 //pangram - all letters appear at least once
 public class pangram {
     public static void main(String[] args) {

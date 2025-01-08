@@ -1,4 +1,4 @@
-package strings;
+package strings.extra;
 
 import java.util.Arrays;
 

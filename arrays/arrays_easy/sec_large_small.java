@@ -33,3 +33,32 @@ public class sec_large_small {
         return sec_large;
     }
 }
+
+
+
+//or-
+/*
+ public int getSecondLargest(int[] arr) {
+        // Code Here
+        
+        //without .sort
+
+        if(arr==null || arr.length<2){
+            return -1;
+        }
+        
+        int max=Integer.MIN_VALUE;
+        int secmax=Integer.MIN_VALUE;
+        
+        for(int num : arr){
+            if(num > max){
+                secmax=max;
+                max=num;
+            }
+            else if(num > secmax && num < max){
+                secmax=num;
+            }
+        }
+        return secmax == Integer.MIN_VALUE ? -1 : secmax;
+    }
+ */

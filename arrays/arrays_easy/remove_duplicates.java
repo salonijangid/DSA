@@ -11,14 +11,14 @@ public class remove_duplicates {
 
     //TC = O(N) & SC = O(1)
     static int remove(int[] nums) {
-        int count=0;
+        int count=0;            //keeps track of the number of unique elements.
         for(int i=0;i<nums.length;i++){
             if(i<nums.length-1 && nums[i]==nums[i+1]){
-                continue;
+                continue;        //skip the duplicates i.e. dont add it to the o/p arr
             }
             else{
-                nums[count]=nums[i];
-                count++;
+                nums[count]=nums[i];       //Tracks the index where the next unique element should be stored in the array
+                count++;    //to store next unique element
             }
         }
         return count;
