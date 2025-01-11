@@ -28,8 +28,6 @@ public class print_max_sum_subarr {
                 sum = 0;
             }
         }
-        System.out.println("Maximum subarray sum: " + maxsum);
-        System.out.println("Subarray: ");
         for(int i=ans_start; i<= ans_end; i++){
             System.out.print(a[i] + " ");
         }
@@ -37,3 +35,4 @@ public class print_max_sum_subarr {
         return maxsum;
     }
 }
+

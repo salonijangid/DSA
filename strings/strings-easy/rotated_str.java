@@ -5,7 +5,6 @@ public class rotated_str {
         System.out.println(check(a, b));
     }
 
-    //check if 'b' is a rotated string of 'a'
     static boolean check(String a, String b){
         if(a.length() != b.length()){
             return false;

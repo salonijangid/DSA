@@ -1,5 +1,5 @@
 import java.util.Arrays;
-//anagram -> letters that make up a word, phrase, or name are rearranged to create new ones
+
 public class anagram {
     public static void main(String[] args) {
         String str1 = "act";
@@ -7,7 +7,6 @@ public class anagram {
         System.out.println(check(str1, str2));
     }
 
-    //TC -> O(n log n) ; SC -> O(1)
     static String sort (String str){
         char c[] = str.toCharArray();
         Arrays.sort(c);
