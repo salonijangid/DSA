@@ -2,11 +2,10 @@ package arrays_mid;
 
 public class stock_buy_and_sell {
     public static void main(String[] args) {
-        int a[] = {7,1,5,3,6,4};    // max_profit = 6 (sell) - 1 (buy) ; u cannot sell before buying thus 7 - 1 is not the answer
+        int a[] = {7,1,5,3,6,4};    
         System.out.println(profit(a));
     }
 
-    //TC -> O(N) ; SC -> O(1)
     static int profit(int[] a){
         int min_price = Integer.MAX_VALUE;
         int max_profit = 0;

@@ -2,8 +2,8 @@ package arrays_easy;
 
 public class longest_subarr_with_sum_k{
     public static void main(String[] args) {
-        int[] a = {-59 ,-25, 58, -59, -25, 58};
-        int k = -85;
+        int[] a = {5,1,2};
+        int k = 3;
         System.out.println(length(a, k));
     }
 
